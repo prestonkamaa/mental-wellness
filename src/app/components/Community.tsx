@@ -1,0 +1,28 @@
+import GreenBgBtn from "./Buttons/GreenBgBtn";
+import Image from "next/image"; 
+import communityImg from "../../../public/img/6-min.png"
+
+export default function Community() {
+  return (
+    <div className=" lg:py-10">
+        <div className=" flex flex-col lg:p-20 p-4 bg-white lg:space-y-7 space-y-3 lg:rounded-[3.75rem] rounded-3xl relative ">
+            <h2 className="text-sm font-semibold uppercase"> Community</h2>
+            <h1 className=" font-semibold lg:text-[2.5rem] text-3xl lg:leading-12 lg:w-[350px]  ">  
+                You&apos;re Not Alone on This Journey
+            </h1>    
+            <p className=" lg:text-[1.25rem] lg:w-[400px] "> Connect with others, share experiences, and find encouragement in a safe, supportive space.</p>
+            <GreenBgBtn btnTitle="Join The Community " /> 
+
+            <Image 
+                src={communityImg}
+                alt="community"
+                width={500}
+                height={500}
+                className=" absolute w-[610px] right-0 bottom-0"
+            /> 
+ 
+        </div>  
+
+    </div>
+  )
+}

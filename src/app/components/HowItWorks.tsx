@@ -1,12 +1,28 @@
+"use client"
 import GreenBgBtn from "./Buttons/GreenBgBtn";
 import Image from "next/image";
 import meditate from "../../../public/img/3-min.png"
+import { motion } from "framer-motion";
 
 export default function HowItWorks() {
   return (
-    <div className=" grid lg:grid-cols-2 grid-cols-1 lg:py-16 py-5 lg:px-20 items-center lg:space-y-0 space-y-3">
+    <div className=" container grid lg:grid-cols-2 grid-cols-1 lg:py-16 py-5 lg:px-20 items-center lg:space-y-0 space-y-3">
         <div className=" lg:space-y-5 space-y-2 ">
-            <h2 className="text-sm font-semibold uppercase"> How It Works</h2>
+            <motion.h2
+                initial={{opacity:0, y:-100 }}
+                whileInView={{opacity:1, y:0 }}
+                animate={{ opacity:1, y:0 }}
+                transition={{ 
+                type:"spring", 
+                stiffness:50,
+                damping:10,
+                delay:0.2,
+                
+                }}   
+                className="text-sm font-semibold uppercase"
+            > 
+                How It Works
+            </motion.h2>
             <h1 className="lg:text-[3.25rem] text-3xl font-bold lg:w-[400px] lg:leading-16 "> 
                 We Help You Prioritize Your Mental Health
             </h1>

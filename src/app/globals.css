@@ -2,8 +2,10 @@
 
 @import "preline/variants.css";
 @source "../node_modules/preline/dist/*.js";
+
 /* Plugins */
-/* @plugin "@tailwindcss/forms"; */
+@plugin "@tailwindcss/forms";
+
 
 :root {
   --background: #F7F6F4;

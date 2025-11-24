@@ -1,17 +1,35 @@
-import React from 'react'
-import { EmblaOptionsType } from 'embla-carousel'
-import { DotButton, useDotButton } from './EmblaCarouselDotButton'
+import React from "react"
+import { EmblaOptionsType } from "embla-carousel"
+import { DotButton, useDotButton } from "../Slider/EmblaCarouselDotButton"
 import {
   PrevButton,
   NextButton,
   usePrevNextButtons
-} from './EmblaCarouselArrowButtons'
-import useEmblaCarousel from 'embla-carousel-react'
+} from "../Slider/EmblaCarouselArrowButtons"
+import useEmblaCarousel from "embla-carousel-react"
+import TestimonialCard from "../Cards/TestimonialCard"
+import { div } from "framer-motion/client"
 
 type PropType = {
   slides: number[]
   options?: EmblaOptionsType
 }
+
+
+    const testimonialdata = [
+        {
+            personname: "Anna R, 32",
+            text: "“Solus made it so easy to find the right therapist for me. The sessions have truly transformed my mindset, and I feel more in control of my emotions than ever before!”",        
+        },
+        {
+            personname: "Mark S, 41",
+            text: "“The wellness programs offered by Solus have been a game-changer for my overall well-being. The guided meditation and mindfulness exercises have helped me manage stress and improve my focus.”",        
+        },
+        {
+            personname: "Susan, 22",
+            text: "“I was initially hesitant about online therapy, but Solus exceeded my expectations. The platform is user-friendly, and the therapists are incredibly supportive and understanding.”",        
+        },
+    ]
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props
@@ -31,11 +49,30 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{index + 1}</div>
-            </div>
-          ))}
+          {
+            testimonialdata.map( (item, i) => {
+              return (
+                  <>
+                    {slides.map((index) => (
+                      <div className="embla__slide" key={index}>
+                        {/* <div className="embla__slide__number">{index + 1}</div> */}
+                        <div className=" embla__slide__number ">
+
+
+                                <TestimonialCard
+                                  key={i}
+                                  testimonialtext={item.text}
+                                  persons={item.personname}
+                                />
+
+
+                        </div>
+                      </div>
+                    ))}
+                  </>
+                )
+            } )
+          } 
         </div>
       </div>
 

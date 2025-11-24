@@ -4,12 +4,16 @@ import client2 from "../../../public/img/client2.svg"
 import client3 from "../../../public/img/client3.svg"
 import client4 from "../../../public/img/client4.svg"
 import client5 from "../../../public/img/client5.svg"
+import TestimonialSlider from "./Slider/TestimonialSlider"
 
 export default function Testimonials() {
-  return (
-    <div className="lg:py-16 py-4  ">
 
-        <div className="flex">
+
+
+  return (
+    <div className=" container lg:py-16 py-4  ">
+
+        <div className="flex gap-5">
             <div className=" lg:space-y-0 space-y-3">
                 <h2 className="text-sm font-semibold  uppercase"> Testimonials</h2>
                 <h1 className="lg:text-[3.25rem] font-bold lg:w-[450px] lg:leading-16 text-xl "> 
@@ -17,8 +21,10 @@ export default function Testimonials() {
                 </h1>    
                 <p className=" lg:text-[1.375rem] lg:w-[450px] ">Positive expiriences from users who have benefited from therapy or wellness programs.</p>
             </div>
+ 
+                <TestimonialSlider/>
 
-            <div className="flex ml-40 gap-5">
+            {/* <div className="flex ml-40 gap-5">
                 <div className=" relative flex flex-col bg-secondary lg:rounded-[3.75rem] rounded-2xl px-10 py-12 h-[393px] w-[393px] text-xl space- ">
                     <p>
                         &quot;Solus made it so easy to find the right therapist for me. The sessions have truly transformed my mindset, and I feel more in control of my emotions than ever before!&quot;
@@ -35,7 +41,11 @@ export default function Testimonials() {
                         Anna R, 32
                     </p>
                 </div>
-            </div>
+            </div> */}
+
+
+
+
         </div>
         
 

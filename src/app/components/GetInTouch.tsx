@@ -3,7 +3,7 @@ import support from "../../../public/img/8-min.png";
 
 export default function GetInTouch() {
   return (
-    <div className=" lg:py-20 py-4">
+    <div className=" container lg:py-20 py-4">
         <div className=" flex flex-col items-center justify-center text-center space-y-3 lg:pb-16 pb-4 ">
             <h2 className="text-sm font-semibold uppercase"> Get in Touch</h2>
             <h1 className=" font-semibold lg:text-[2.5rem] text-3xl lg:leading-12 lg:w-[350px]  "> 

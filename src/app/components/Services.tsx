@@ -7,7 +7,7 @@ import selfcare from "../../../public/img/5-min.png";
 
 export default function Services() {
   return (
-    <div className="lg:py-5">
+    <div className=" container lg:py-5">
         <div className="flex flex-col items-center justify-center lg:space-y-5 space-y-3 text-center">
             <h2 className="text-sm font-semibold  uppercase"> How It Works</h2>
             <h1 className="lg:text-[3.25rem] text-3xl font-bold lg:w-[400px] lg:leading-16 "> 

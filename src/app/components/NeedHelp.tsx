@@ -5,7 +5,7 @@ import openMind  from "../../../public/img/7-min.png";
 
 export default function NeedHelp() {
   return (
-    <div className=" grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-4 ">
+    <div className=" container grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-4 ">
         <div className=" lg:space-y-5 space-y-3 relative">
             <h2 className="text-sm font-semibold uppercase"> Need Help?</h2>
             <h1 className=" font-semibold lg:text-[2.5rem] text-3xl lg:leading-12 lg:w-[350px]  "> 

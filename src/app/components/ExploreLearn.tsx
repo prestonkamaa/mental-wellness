@@ -3,6 +3,27 @@ import ExploreCard from './Cards/ExploreCard'
 import { motion } from "framer-motion";
 // import * as motion from "motion/react-client" 
 
+const contentText = [
+    {
+        title: "Articles & Guides",
+        description: "Practical tips on stress management, mindfulness, and emotional resilience.",
+        btnTitle: "Explore",
+        bgColor: "bg-white"
+    },
+    {
+        title: "Meditation & Relaxation",
+        description: "Audio sessions for guided meditation and deep breathing exercises.",
+        btnTitle: "Explore",
+        bgColor: "bg-white"
+    },
+    {
+        title: "Webinars & Workshops",
+        description: "Live and recorded sessions with mental health professionals.",
+        btnTitle: "Explore",
+        bgColor: "bg-white"
+    },
+]
+
 export default function ExploreLearn() {
   return (
     <div className=" container lg:py-5 py-4 ">
@@ -30,9 +51,16 @@ export default function ExploreLearn() {
         </div>
 
         <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-4 lg:pt-16 pt-4 ">
-            <ExploreCard />
-            <ExploreCard />
-            <ExploreCard />
+            {
+                contentText.map( (content, i) => (
+                    <ExploreCard 
+                        key={i}
+                        cardHeading={content.title}
+                        cardDescription={content.description}
+                        btnTitle={content.btnTitle}
+                    />
+                ) )
+            } 
         </div>
 
 

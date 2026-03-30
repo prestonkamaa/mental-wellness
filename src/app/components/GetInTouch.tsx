@@ -94,7 +94,7 @@ export default function GetInTouch() {
                     </div>
                 </div>
 
-                <p className=" text-[#B8B8B8] "> &copy; 2024 Solus. All rights reserved. < a href="https://www.figma.com/community/file/1490253901740476987/solus-mental-health-wellness-website-template"> Figma design link </>  </p> 
+                <p className=" text-[#B8B8B8] "> &copy; 2024 Solus. All rights reserved. <a href="https://www.figma.com/community/file/1490253901740476987/solus-mental-health-wellness-website-template"> Figma design link </a>  </p> 
 
             </div>
 

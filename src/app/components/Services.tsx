@@ -44,7 +44,9 @@ export default function Services() {
             <h1 className=" font-semibold lg:text-[2.5rem] text-xl lg:leading-12  "> Wellness Coaching</h1>
             <p className=" lg:text-[1.25rem] lg:w-[600px] z-20  "> Personalised guidance to help you build healtheir habits, manage stress and achieve balance in all areas of your life.</p>
             <p className=" lg:text-[1.25rem] lg:w-[600px] z-20 "> Our wellness coaches support you in creating sustainable routines for mental, emotional and physical well-being.</p>                
-            <GreenBgBtn btnTitle="Learn More" /> 
+            <div className="z-20"> 
+                <GreenBgBtn btnTitle="Learn More" /> 
+            </div>
 
                 <Image
                     src={selfcare}

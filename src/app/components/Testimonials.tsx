@@ -13,7 +13,7 @@ export default function Testimonials() {
   return (
     <div className=" container lg:py-16 py-4  ">
 
-        <div className="flex gap-5">
+        <div className="lg:flex gap-5">
             <div className=" lg:space-y-0 space-y-3">
                 <h2 className="text-sm font-semibold  uppercase"> Testimonials</h2>
                 <h1 className="lg:text-[3.25rem] font-bold lg:w-[450px] lg:leading-16 text-xl "> 
@@ -21,8 +21,12 @@ export default function Testimonials() {
                 </h1>    
                 <p className=" lg:text-[1.375rem] lg:w-[450px] ">Positive expiriences from users who have benefited from therapy or wellness programs.</p>
             </div>
- 
+
+            <div className="lg:pt-0 pt-5">
                 <TestimonialSlider/>
+            </div>
+ 
+                
 
             {/* <div className="flex ml-40 gap-5">
                 <div className=" relative flex flex-col bg-secondary lg:rounded-[3.75rem] rounded-2xl px-10 py-12 h-[393px] w-[393px] text-xl space- ">

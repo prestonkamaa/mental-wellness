@@ -7,7 +7,7 @@ import {
   usePrevNextButtons
 } from "../Slider/EmblaCarouselArrowButtons"
 import useEmblaCarousel from "embla-carousel-react"
-import TestimonialCard from "../Cards/TestimonialCard"
+import TestimonialCard from "../Cards/TestimonialCard" 
 import { div } from "framer-motion/client"
 
 type PropType = {
@@ -51,25 +51,21 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {
             testimonialdata.map( (item, i) => {
-              return (
+              return ( 
                   <>
                     {slides.map((index) => (
-                      <div className="embla__slide" key={index}>
-                        {/* <div className="embla__slide__number">{index + 1}</div> */}
-                        <div className=" embla__slide__number ">
-
-
-                                <TestimonialCard
-                                  key={i}
-                                  testimonialtext={item.text}
-                                  persons={item.personname}
-                                />
-
-
+                      <div className="embla__slide " key={index}> 
+                        <div className=" embla__slide__number bg-secondary lg:rounded-[3.75rem] rounded-2xl lg:px-10 px-5 " key={i}>
+                          <p className="lg:text-xl text-lg ">
+                            {item.text}
+                          </p>
+                          <p className=" absolute bottom-10 lg:text-xl  text-lg ">
+                              {item.personname}
+                          </p>
                         </div>
                       </div>
                     ))}
-                  </>
+                  </> 
                 )
             } )
           } 

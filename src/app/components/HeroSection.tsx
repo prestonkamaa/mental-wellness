@@ -18,7 +18,7 @@ export default function HeroSection() {
           delay:0.03,
         
         }}
-        className="font-bold lg:text-7xl text-3xl lg:w-[650px]  "
+        className=" z-20 font-bold lg:text-7xl text-3xl lg:w-[650px]  "
       >
         Support for Your Mental Well-being
       </motion.h1>
@@ -33,7 +33,7 @@ export default function HeroSection() {
           delay:0.2,
         
         }}      
-        className=" lg:py-7 py-3 lg:w-[530px] lg:text-2xl ">
+        className=" z-20 lg:py-7 py-3 lg:w-[530px] lg:text-2xl ">
         Connect with license therapists, counselors and wellness coaches to support your journey.
       </motion.p>  
       <motion.div
@@ -46,8 +46,9 @@ export default function HeroSection() {
           delay:0.3,
         
         }}  
-      >
-        <GreenBgBtn btnTitle="Get Started" />
+        className=" z-20"
+      > 
+          <GreenBgBtn btnTitle="Get Started" /> 
       </motion.div>     
           
 
@@ -56,14 +57,14 @@ export default function HeroSection() {
         alt=""
         width={0}
         height={0}
-        className=" absolute h-full top-0 left-0 lg:rounded-t-[4.375rem] rounded-t-2xl  lg:rounded-l-[4.375rem] rounded-l-2xl "
+        className=" absolute lg:h-full lg:w-94 w-20 left-0 bottom-0 z-10 lg:top-0 lg:left-0 lg:rounded-t-[4.375rem] rounded-t-2xl  lg:rounded-l-[4.375rem] rounded-l-2xl "
       />
       <Image
         src={bgImg2}
         alt=""
         width={0}
         height={0}
-        className="  absolute top-0 right-0 h-full lg:rounded-r-[4.375rem] rounded-r-2xl "
+        className="  absolute lg:h-full lg:w-94 w-20 right-0 bottom-0 z-10 lg:top-0 lg:right-0 lg:rounded-r-[4.375rem] rounded-r-2xl "
       />
     </div>
   )

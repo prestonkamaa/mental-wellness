@@ -3,8 +3,8 @@
 
 export default function NavBar() {
   return (
-    <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-transparent text-sm py-3 lg:py-7 dark:bg-neutral-800">
-      <nav className="max-w-[85rem] w-full mx-auto   sm:flex sm:items-center sm:justify-between">  
+    <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-transparent text-sm py-3 lg:py-7 dark:bg-neutral-800  ">
+      <nav className="max-w-[85rem] w-full mx-auto sm:flex sm:items-center sm:justify-between">  
         <div className="flex items-center justify-between">
           <a className=" lg:hidden flex-none text-2xl font-semibold dark:text-white focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">
             Solus
@@ -20,8 +20,8 @@ export default function NavBar() {
           </div>
         </div>
         
-        <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
-          <div className="flex flex-col lg:gap-[4.75rem] gap-2 mt-5 sm:flex-row sm:items-center lg:justify-center sm:justify-end sm:mt-0 sm:ps-5">
+        <div id="hs-navbar-example" className=" hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
+          <div className="flex flex-col lg:gap-[4.65rem] gap-2 mt-5 sm:flex-row sm:items-center lg:justify-center sm:justify-end sm:mt-0 sm:ps-5">
             
             <a className="font-medium text-lg hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-500 dark:hover:text-neutral-600 dark:focus:text-neutral-600" href="#">Home</a>
             <a className="font-medium text-lg hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-500 dark:hover:text-neutral-600 dark:focus:text-neutral-600" href="#">About</a>

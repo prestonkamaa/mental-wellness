@@ -36,7 +36,7 @@ export default function GetInTouch() {
                     </svg>
                 </div>
 
-                <div className=" absolute bottom-20 ">
+                <div className=" lg:absolute lg:bottom-20 ">
                     We typically respond within 12 hours.
                 </div>
             </div>
@@ -44,7 +44,7 @@ export default function GetInTouch() {
             <div className=" ">
                 <h3 className=" font-semibold lg:text-3xl text-xl "> Send Us a Message</h3>
 
-                <div className=" bg-[#FDF7F1] lg:p-10 px-4 lg:rounded-[3.125rem] rounded-3xl space-y-3 mt-9">                                 
+                <div className=" bg-[#FDF7F1] lg:p-10 p-5 lg:rounded-[3.125rem] rounded-3xl space-y-3 mt-9">                                 
                     <div>
                         <p>
                             Email
@@ -71,7 +71,7 @@ export default function GetInTouch() {
 
         <div className=" grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-4 lg:pt-16 pt-4  ">
 
-            <div className=" bg-white lg:rounded-[3.75rem] rounded-3xl lg:p-10 p-4 ">
+            <div className=" bg-white lg:rounded-[3.75rem] rounded-3xl lg:p-10 p-4 lg:order-first order-last ">
                 <h3 className=" font-semibold lg:text-[2.5rem] text-3xl "> Solus</h3>
                 
                 <div className=" grid lg:grid-cols-3 grid-cols-2 lg:gap-5 lg:py-10"> 
@@ -94,14 +94,14 @@ export default function GetInTouch() {
                     </div>
                 </div>
 
-                <p className=" text-[#B8B8B8] "> &copy; 2024 Solus. All rights reserved. <a href="https://www.figma.com/community/file/1490253901740476987/solus-mental-health-wellness-website-template"> Figma design link </a>  </p> 
+                <p className=" text-[#B8B8B8]  lg:text-left text-center lg:pt-0 pt-3 "> &copy; 2024 Solus. All rights reserved. <a href="https://www.figma.com/community/file/1490253901740476987/solus-mental-health-wellness-website-template"> Figma design link </a>  </p> 
 
             </div>
 
-            <div className=" bg-primary lg:rounded-[3.75rem] rounded-3xl lg:p-10 p-4 relative ">
+            <div className=" bg-primary lg:rounded-[3.75rem] rounded-3xl lg:p-10 p-4 relative lg:order-last order-first ">
                 <h3 className=" font-semibold lg:text-[2.5rem] text-xl text-white lg:w-[250px] lg:pb-10 pb-4 "> Find Support, Guidance, and Balance.</h3>
 
-                <button className=" font-semibold bg-white w-full py-2 lg:rounded-[3.75rem] rounded-3xl  ">
+                <button className=" relative font-semibold bg-white w-full py-2 lg:rounded-[3.75rem] rounded-3xl z-10  ">
                     Find Support Now
                 </button>
 
@@ -110,7 +110,7 @@ export default function GetInTouch() {
                     alt="support"
                     width={500}
                     height={500}
-                    className=" absolute w-[200px] top-12 right-0"
+                    className=" absolute lg:w-[200px] w-24 top-12 right-0 z-0 "
                 /> 
 
 

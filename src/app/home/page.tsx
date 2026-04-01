@@ -11,14 +11,13 @@ export default function HomePage() {
   return (
     <div>
 
-
       <HeroSection />
       <HowItWorks />
       <Services />
       <Testimonials />
       <ExploreLearn />
       <Community />
-      <NeedHelp /> 
+      <NeedHelp />
      
     </div>
   )

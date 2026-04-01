@@ -20,7 +20,7 @@ export default function HowItWorks() {
                     delay:0.2,
                 
                 }}   
-                className="text-sm font-semibold uppercase"
+                className="text-sm font-semibold uppercase lg:text-left text-center "
             > 
                 How It Works
             </motion.h2>
@@ -36,7 +36,7 @@ export default function HowItWorks() {
                     delay:0.4,
                 
                 }}              
-             className="lg:text-[3.25rem] text-3xl font-bold lg:w-[400px] lg:leading-16 "
+             className="lg:text-[3.25rem] text-3xl font-bold lg:w-[400px] lg:leading-16 lg:text-left text-center  "
              > 
                 We Help You Prioritize Your Mental Health
             </motion.h1>
@@ -52,7 +52,7 @@ export default function HowItWorks() {
                     delay:0.6,
                 
                 }}          
-             className=" lg:text-[1.375rem] lg:w-[400px] "
+             className=" lg:text-[1.375rem] lg:w-[400px]  lg:text-left text-center  "
             > 
             Browse therapists, book a session, and start your healing journey with trusted professionals. 
             </motion.p>
@@ -67,7 +67,8 @@ export default function HowItWorks() {
                     damping:10,
                     delay:0.8,
                 
-                }}             
+                }}   
+                className=" lg:text-left text-center "        
             >
                 <GreenBgBtn btnTitle="Find A Therapist" />  
             </motion.div> 

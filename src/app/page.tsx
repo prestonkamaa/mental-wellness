@@ -7,7 +7,7 @@ import GetInTouch from "./components/GetInTouch";
 export default function Home() {
   return (
     <div className=" lg:px-20 px-4 "> 
-      <NavBar />   
+      <NavBar />    
       <HomePage />
       <GetInTouch />
     </div>
